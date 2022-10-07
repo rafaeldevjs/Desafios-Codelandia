@@ -1,0 +1,128 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+
+}
+
+header p {
+  width: 100%;
+  padding: 30px 0;
+  color: #f9f9f9;
+  background-color: var(--title);
+
+}
+
+header h1 {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #f9f9f9;
+}
+
+main .hero {
+  position: relative;
+  width: 100%;
+  height: 378px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.parallax {
+  background-image: url("./img/wallpaper.jpeg");
+  min-height: 400px;
+  filter: brightness(50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .hero .img-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  z-index: 1;
+  object-fit: cover;
+}
+
+main .hero .text {
+  margin-left: 100px;
+  position: absolute;
+  color: #f9f9f9;
+  max-width: 500px;
+  z-index: 99;
+
+}
+
+main .hero .text h2 {
+  margin-bottom: 20px;
+}
+
+main .hero .text p {
+  font-size: 2rem;
+  line-height: 3.0rem;
+}
+
+main .content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+
+}
+
+main .content div {
+  /* margin: 10px auto; */
+  text-align: center;
+  margin: 20px 0;
+}
+
+main .content div h2 {
+  margin-bottom: 20px;
+}
+
+main section .produtos {
+  margin: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+}
+
+.item {
+  min-width: 250px;
+
+  background-color: var(--bgCard);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  width: 250px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--title);
+  padding: 20px 0;
+  margin-top: 100px;
+  color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+
+
+  main .hero .text {
+    margin-left: 20px;
+  }
+}
